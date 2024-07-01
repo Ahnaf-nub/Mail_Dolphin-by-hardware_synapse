@@ -37,6 +37,7 @@ We used,
 
 ### Usage
 **Customization**
+
 Tuning Mail-Dolphin is really easy!
 
 First, add some general information about yourself / your company. Anything that would be needed for Mail-Dolphin in order to reply to emails on your behalf.
@@ -48,8 +49,12 @@ Then, add some example replies that describe your desired tone. It is a good ide
 Inside the `Example replies` section, you can add, delete, or duplicate an example.
 
 ![image](https://github.com/Ahnaf-nub/Mail_Dolphin-by-hardware_synapse/assets/113457396/5d3fec31-3637-42db-b5cf-aba4c5c83431)
-
+ 
+ 
+ 
+ 
 **More Customization** 
+
 You can also filter emails based on email addresses and intents.
 Head over to the `Filtering` section, and make some changes!
 
