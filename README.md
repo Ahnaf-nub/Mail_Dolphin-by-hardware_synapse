@@ -6,6 +6,11 @@
 * Iqbal Samin Prithul - email: prithul0218@gmail.com
 
 ## Overview of our Repository
- * `chassis` - this folder contains the pictures of the chassis that we used on our robot.  
- * `models` - the 3D printable files used in our robot.
+ * `static` - this folder contains the codes for client side.  
+ * `templates` - this folder contains HTML template files.
+ * `app.py` - This is the main code for flask part and also for tinyllama
+###About our Project###
+**Problem Statement**
 
+
+**Problem Solution**
