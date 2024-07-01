@@ -1,0 +1,51 @@
+{% extends 'dash_base.html' %}
+
+{% block headerTags %}
+<link href="{{ url_for('static', filename='css/test.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Experiment</h1>
+
+    <h4>Example Input:</h4>
+    <div style="margin: 0 2rem;">
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label>Subject: </label>
+            </div>
+            <div class="col">
+                <input type="text" id="inSub" class="InSub">
+            </div>
+        </div>
+        <br>
+        <label>Email Body: </label><br>
+        <textarea class="InBody" id="inBody">#Input an example</textarea>
+    </div>
+    <div style="margin: 0 2rem;">
+        <button type="button" class="btn btn-outline-primary" style="margin: 2rem 0; width: 100%;" id="sendBtn">Send</button>
+    </div>
+    <h4>Example Reply:</h4>
+    <div style="margin: 0 2rem;"><br>
+        <label>Reply Body: </label>
+        <div class="textContent">
+            <pre id="outBody">You'll get the reply here</pre>
+        </div>
+    </div>
+    <div style="margin: 10rem 0;"></div>
+</div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    document.querySelector("#test").classList.add('active');
+    document.querySelector("#sendBtn").addEventListener('click', ()=>{
+        testEmail(
+            sub=document.querySelector("#inSub").value,
+            body=document.querySelector("#inBody").value,
+            replyLabel=document.querySelector("#outBody")
+        );
+    });
+</script>
+{% endblock %}

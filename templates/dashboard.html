@@ -1,0 +1,33 @@
+{% extends 'dash_base.html' %}
+
+{% block headerTags %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+{% endblock %}
+
+{% block content %} 
+<div class="container">
+    <div>
+        <h1>Hello <span name="usersName">there</span>, you are logged in</h1>
+        <p>Email address: <span class="text-primary" name="usersEmail"></span></p>
+    </div>
+    <br><br><br>
+    <div class="container-fluid chart">
+        <canvas id="emailChart" width="100" height="50"></canvas>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    document.querySelector("#dashboard").classList.add('active')
+</script>
+
+<script>
+    getUserInfo().then(usrDat => {
+        document.getElementsByName('usersEmail').forEach((elem)=>{elem.textContent = usrDat.email;})
+        document.getElementsByName('usersName').forEach((elem)=>{elem.textContent = usrDat.name;})
+    });
+
+    makeChart('emailChart');
+</script>
+{% endblock %}

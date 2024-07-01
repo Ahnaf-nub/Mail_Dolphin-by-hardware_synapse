@@ -1,0 +1,157 @@
+{% extends 'dash_base.html' %}
+
+{% block headerTags %}
+<link href="{{ url_for('static', filename='css/tune.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="container-fluid heading">
+        <h2 style="padding-top: 1.75rem;"><i class='bx bxs-magic-wand'></i> Customization wizard</h2>
+    </div>
+
+    <section id="genInfo" style="margin-top: 3rem;">
+        <div class="card border-dark bg-transparent mb-4 rounded-3 shadow-sm ">
+            <div class="card-header py-3 text-bg-dark">
+                <h4 class="my-0 fw-normal">General Information</h4>
+            </div>
+            <div class="card-body">
+                <textarea style="min-height: 15rem;"
+                    id="generalInfoInput">Add some general information about yourself / your company so it can be useful to the AI to learn about you and therefore send emails on your behalf.</textarea>
+            </div>
+        </div>
+    </section>
+
+    <div class="border-bottom border-secondary" style="margin: 5rem 3rem;"></div>
+
+    <section id="specReply">
+        <h3>Example replies</h3>
+        <p class="lead">Add some example email and their probable replies to fine tune the AI. These examples will helt
+            the AI to send better responses.</p>
+
+        <div class="row align-items-center m-3">
+            <div class="col-auto">
+                <button type="button" class="btn btn-outline-primary" id="addSpec"><i
+                        class='bx bx-plus-medical'></i></button>
+            </div>
+            <div class="col">
+                <h5>Add new example</h5>
+            </div>
+        </div>
+        <div class="accordion" id="specAccordion">
+            <div class="accordion-item" id="specTemplate" name="spec-#">
+                <h2 class="accordion-header">
+                    <div vlass="row g-3 align-items-center">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <input class="replyDesc border-left border-light" id="name-#"
+                                value="Give an example name"></input>
+                        </button>
+                    </div>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#specAccordion">
+                    <div class="accordion-body">
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-primary dupliBtn" style="margin-bottom: 10px;"
+                                id="dupli-#"><i class='bx bxs-add-to-queue'></i></button>
+                            <button type="button" class="btn btn-danger deleteBtn" style="margin-bottom: 10px;"
+                                id="delete-#"><i class='bx bxs-trash'></i></button>
+                        </div>
+
+                        <h4>Example Input:</h4>
+                        <div style="margin: 0 2rem;">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-auto">
+                                    <label>Subject: </label>
+                                </div>
+                                <div class="col">
+                                    <input type="text" id="inSub-#" class="tuningInSub">
+                                </div>
+                            </div>
+                            <br>
+                            <label>Email Body: </label><br>
+                            <textarea class="tuningInBody" id="inBody-#">#Input an example</textarea>
+                        </div>
+                        <div class="border-bottom border-secondary" style="margin: 2rem;"></div>
+                        <div class="border-bottom border-secondary" style="margin: 2rem;"></div>
+                        <h4>Example Reply:</h4>
+                        <div style="margin: 0 2rem;"><br>
+                            <label>Reply Body: </label>
+                            <textarea class="tuningOutBody" id="outBody-#">#Input an example</textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="border-bottom border-secondary" style="margin: 5rem 3rem;"></div>
+
+    <section id="cotrol">
+        <h3>Filtering</h3>
+        <p class="lead">Set whether to reply to an email or not. Based on the sender's email address, or based on the
+            email's intention.</p>
+
+        <div class="card border-dark bg-transparent mb-4 rounded-3 shadow-sm ">
+            <div class="card-header py-3 text-bg-dark">
+                <h4 class="my-0 fw-normal">Filter by email address</h4>
+            </div>
+            <div class="card-body">
+                <div class="btn-group mb-3" role="group">
+                    <input type="radio" class="btn-check" name="filterContacts" id="cTrue" checked>
+                    <label class="btn btn-outline-primary norm" for="cTrue">Send</label>
+
+                    <input type="radio" class="btn-check" name="filterContacts" id="cFalse">
+                    <label class="btn btn-outline-danger norm" for="cFalse">Don't Send</label>
+                </div>
+
+                <textarea style="min-height: 10rem;" class="controlTextArea" id="contacts"
+                    placeholder="Separate by comma (,)"></textarea>
+
+            </div>
+        </div>
+
+        <div class="card border-dark bg-transparent mb-4 rounded-3 shadow-sm ">
+            <div class="card-header py-3 text-bg-dark">
+                <h4 class="my-0 fw-normal">Filter by intention</h4>
+            </div>
+            <div class="card-body">
+                <div class="btn-group mb-3" role="group">
+                    <input type="radio" class="btn-check" name="filterIntents" id="iTrue" checked>
+                    <label class="btn btn-outline-primary norm" for="iTrue">Send</label>
+
+                    <input type="radio" class="btn-check" name="filterIntents" id="iFalse">
+                    <label class="btn btn-outline-danger norm" for="iFalse">Don't Send</label>
+                </div>
+
+                <textarea style="min-height: 10rem;" class="controlTextArea" id="intents"
+                    placeholder="Separate by line break (↵)"></textarea>
+
+            </div>
+        </div>
+</div>
+</section>
+
+<div class="btn-group dataMenu" role="group">
+    <button type="button" id="saveBtn" class="btn btn-lg btn-primary"><i class='bx bxs-save'></i></button>
+    <button type="button" id="impoBtn" class="btn btn-lg btn-primary"><i class='bx bx-import'></i></button>
+    <button type="button" id="expoBtn" class="btn btn-lg btn-primary"><i class='bx bx-export'></i></i></button>
+</div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    document.querySelector("#tune").classList.add('active')
+    showTrainingData();
+    document.querySelector("#addSpec").addEventListener('click', addNewSpecReply);
+    document.querySelector("#saveBtn").addEventListener('click', saveData);
+
+    document.querySelector("#contacts").addEventListener("change", (event) => {
+        contactsFilter(event.target.value);
+    });
+    document.querySelector("#intents").addEventListener("change", (event) => {
+        intentsFilter(event.target.value);
+    });
+</script>
+{% endblock %}
