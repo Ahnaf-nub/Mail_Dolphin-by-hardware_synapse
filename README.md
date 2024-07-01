@@ -26,5 +26,8 @@ To address this issue, we've developed an automated email reply system (Mail Dol
 5. Replies to the email on behalf of the user.
 
 ### Tech Stacks
-
-We used Tinyllama for NLP and Flask API, Bootstrap, HTML and Javascript 
+We used,
+* `Tinyllama` for NLP
+* `Flask API` for the backend
+* `Bootstrap`, `CSS`, and `HTML` for the interface
+* `Javascript` for handling the communication between the frontend and the backend
