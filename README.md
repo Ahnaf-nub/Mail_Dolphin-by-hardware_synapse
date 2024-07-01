@@ -34,7 +34,8 @@ We used,
 * `Gmail API` to integrate user's Gmail with our Mail-Dolphin
 
 
-## Usage
+### Usage
+**Customization**
 Tuning Mail-Dolphin is really easy!
 
 First, add some general information about yourself / your company. Anything that would be needed for Mail-Dolphin in order to reply to emails on your behalf.
@@ -46,3 +47,19 @@ Then, add some example replies that describe your desired tone. It is a good ide
 Inside the `Example replies` section, you can add, delete, or duplicate an example.
 
 ![image](https://github.com/Ahnaf-nub/Mail_Dolphin-by-hardware_synapse/assets/113457396/5d3fec31-3637-42db-b5cf-aba4c5c83431)
+
+**More Customization** 
+You can also filter emails based on email addresses and intents.
+Head over to the `Filtering` section, and make some changes!
+
+![image](https://github.com/Ahnaf-nub/Mail_Dolphin-by-hardware_synapse/assets/113457396/386c6a09-a3bf-4d6a-a99a-5372b3bc20b5)
+
+Here, Mail-Dolphin is not to send replies to `example@gmail.com`, and `example2@yahoo.com`.
+Also, Mail-Dolphin is to send replies **If only someone wants information about our service.**
+
+After you are done, click the save icon to save your tuning info.
+
+### Testing
+You can experiment by sending some demo emails to our service. Head over to the `Test` page and send a test email to the server. Mail-Dolphin would generate a reply based on your settings and show it to you. Do more tuning if the reply is not satisfactory.
+
+![image](https://github.com/Ahnaf-nub/Mail_Dolphin-by-hardware_synapse/assets/113457396/505e6348-2a0e-4632-947d-b9b803ccc1f5)
