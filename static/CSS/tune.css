@@ -1,0 +1,57 @@
+textarea {
+    resize: vertical;
+    overflow: auto;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: large;
+    outline: none;
+}
+
+.tuningInBody, .tuningOutBody, .controlTextArea{
+    border: 1px solid #303030;
+    padding: 15px;
+}
+
+.replyDesc{
+    width: 50%;
+    background: transparent;
+    font-size: x-large;
+}
+
+.accordion{
+    --bs-accordion-color: white;
+    --bs-accordion-bg: #182025;
+    --bs-accordion-border-color: #303030;
+    --bs-accordion-btn-bg: #212529;
+    --bs-accordion-active-bg: #212529;
+    --bs-accordion-btn-color: white;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-active-color: white;
+}
+
+label{
+    font-size: larger;
+}
+.tuningInSub{
+    background: transparent;
+    outline: 1px solid #303030;
+    width: 100%;
+}
+.tuningInSub:focus{
+    background: transparent;
+}
+
+.dataMenu{
+    position:fixed; 
+    right:10px; 
+    top:10px; 
+    font-size: x-large; 
+    z-index: 9999;
+}
+
+.btn:not(.norm){
+    font-size: x-large;
+}

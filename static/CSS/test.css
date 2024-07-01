@@ -1,0 +1,32 @@
+textarea, .textContent{
+    resize: vertical;
+    overflow: auto;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #303030;
+    background: transparent;
+
+    color: white;
+    font-size: large;
+    outline: none;
+    padding: 15px;
+
+    min-height: 15rem;
+}
+
+.InSub{
+    background: transparent;
+    outline: 1px solid #303030;
+    width: 100%;
+}
+.InSub:focus{
+    background: transparent;
+}
+
+#outBody{
+    resize: none;
+}
+
+label{
+    font-size: larger;
+}

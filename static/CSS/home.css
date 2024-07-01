@@ -1,0 +1,19 @@
+.navbar-brand{
+  padding-left: 1rem;
+}
+
+.auth-button{
+  padding-right: 1rem;
+}
+
+p{
+  font-size: larger;
+}
+.lead{
+  font-size: x-large;
+}
+
+.landing{
+  text-align: center;
+  min-height: 100vh;
+}

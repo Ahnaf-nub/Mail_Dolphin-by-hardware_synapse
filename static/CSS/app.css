@@ -1,0 +1,50 @@
+body {
+  background-color: #151920;
+  color: #eee;
+  overflow-x: hidden;
+}
+
+#error{
+  color: lightsalmon;
+}
+
+input{
+  padding: 10px 10px;
+  margin: 3px;
+  border-radius: 7px;
+  border: none;
+  font-size: larger;
+  background-color: #2c2c2c;
+  color: white;
+  outline: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(0,0,0,0);
+}
+
+::-webkit-resizer{
+  border: 3px solid gray;
+  border-radius: 50%;
+}
