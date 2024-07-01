@@ -6,9 +6,10 @@
 * Iqbal Samin Prithul - email: prithul0218@gmail.com
 
 ## Overview of our Repository
- * `static` - this folder contains the codes for client side.  
+ * `static` - this folder contains the codes and design elements for the client side.  
  * `templates` - this folder contains HTML template files.
- * `app.py` - This is the main code for flask part and also for tinyllama
+ * `app.py` - This is the main code for flask, tinyllama, and the API integrations.
+ * `requirements.txt` - Contains a list of required packages fo this project.
 
 ### About our Project
 
