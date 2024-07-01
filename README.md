@@ -32,3 +32,17 @@ We used,
 * `Javascript` for handling the communication between the frontend and the backend
 * `Tinyllama` for NLP
 * `Gmail API` to integrate user's Gmail with our Mail-Dolphin
+
+
+## Usage
+Tuning Mail-Dolphin is really easy!
+
+First, add some general information about yourself / your company. Anything that would be needed for Mail-Dolphin in order to reply to emails on your behalf.
+Go to the `Tune` page. Here, you'll find the customization wizard. Now add to the `General Information`.
+
+![image](https://github.com/Ahnaf-nub/Mail_Dolphin-by-hardware_synapse/assets/113457396/76615fe6-62aa-4a82-9f9f-2efb03bc8b69)
+
+Then, add some example replies that describe your desired tone. It is a good idea to add some examples based on frequently asked questions.
+Inside the `Example replies` section, you can add, delete, or duplicate an example.
+
+![image](https://github.com/Ahnaf-nub/Mail_Dolphin-by-hardware_synapse/assets/113457396/5d3fec31-3637-42db-b5cf-aba4c5c83431)
