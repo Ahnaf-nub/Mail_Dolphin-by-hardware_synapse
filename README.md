@@ -20,8 +20,8 @@ To address this issue, we've developed an automated email reply system (Mail Dol
 
 ### Workflow
 1. User integrates their existing Gmail account with Mail-Dolphin.
-2. Adds some General information along with some example emails and replies to tune the service to match their preference.
-3. Mail-Dolphine checks for any email the user receives.
+2. Adds some General information along with some example emails and replies to tune the service to match their preferences.
+3. Mail-Dolphin checks for any email the user receives.
 4. Generates a reply based on the information and examples given by the user.
 5. Replies to the email on behalf of the user.
 
