@@ -9,7 +9,8 @@
  * `static` - this folder contains the codes for client side.  
  * `templates` - this folder contains HTML template files.
  * `app.py` - This is the main code for flask part and also for tinyllama
-###About our Project###
+
+### About our Project
 
 **Problem Statement**
 Managing and responding to emails can be time-consuming and overwhelming, especially when dealing with a high volume of incoming messages. It is often necessary to respond to emails promptly and in a personalized manner to maintain professional communication and ensure that important information is communicated in a timely manner. As a result, it is more difficult to understand the intent behind each email and respond appropriately based on individual preferences and contexts.
