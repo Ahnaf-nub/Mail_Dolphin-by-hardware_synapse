@@ -27,7 +27,8 @@ To address this issue, we've developed an automated email reply system (Mail Dol
 
 ### Tech Stacks
 We used,
-* `Tinyllama` for NLP
 * `Flask API` for the backend
 * `Bootstrap`, `CSS`, and `HTML` for the interface
 * `Javascript` for handling the communication between the frontend and the backend
+* `Tinyllama` for NLP
+* `Gmail API` to integrate user's Gmail with our Mail-Dolphin
