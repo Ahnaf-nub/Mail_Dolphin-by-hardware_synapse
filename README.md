@@ -25,5 +25,5 @@ To address this issue, we've developed an automated email reply system (Mail Dol
 4. Generates a reply based on the information and examples given by the user.
 5. Replies to the email on behalf of the user.
 
-**Tech Stacks**
+###Tech Stacks###
 We used Tinyllama for NLP and Flask API, Bootstrap, HTML and Javascript 
