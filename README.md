@@ -30,14 +30,14 @@ To address this issue, we've developed an automated email reply system (Mail Dol
 
 ### Tech Stacks
 We used,
-* `Flask API` for the backend
-* `Bootstrap`, `CSS`, and `HTML` for the interface
-* `Javascript` for handling the communication between the frontend and the backend
-* `Tinyllama` for NLP
-* `Gmail API` to integrate user's Gmail with our Mail-Dolphin
+* `Flask API` for the backend.
+* `Bootstrap`, `CSS`, and `HTML` for the interface.
+* `Javascript` for handling the communication between the frontend and the backend.
+* `Tinyllama` for Natural Language Processing.
+* `Gmail API` to integrate user's Gmail with our Mail-Dolphin.
 
 ### Starting the project on your local machine
-1. Install python (3.10 or higher) and git, and clone this repository.
+1. Install python (3.10 or higher) and clone this repository.
 ```
 git clone https://github.com/Ahnaf-nub/Mail_Dolphin-by-hardware_synapse.git
 ```
@@ -49,7 +49,7 @@ cd Mail_Dolphin-by-hardware_synapse-main
 ```
 pip install -r requirements.txt
 ```
-5. Run app.py
+5. Run app.py 
 ```
 python3 app.py
 ```
