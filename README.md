@@ -36,6 +36,23 @@ We used,
 * `Tinyllama` for NLP
 * `Gmail API` to integrate user's Gmail with our Mail-Dolphin
 
+### Starting the project on your local machine
+1. Install python (3.10 or higher) and git, and clone this repository.
+```
+git clone https://github.com/Ahnaf-nub/Mail_Dolphin-by-hardware_synapse.git
+```
+2. Head into the directory.
+```
+cd Mail_Dolphin-by-hardware_synapse-main
+```
+4. Install required packages.
+```
+pip install -r requirements.txt
+```
+5. Run app.py
+```
+python3 app.py
+```
 
 ### Usage
 **Customization**
